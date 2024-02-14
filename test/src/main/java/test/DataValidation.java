@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DataValidation {
+
 	@Test(dataProvider = "usercredentials", dataProviderClass = TestdataLogic.class)
 	public void LoginFunctionality(String username, String password) {
 
